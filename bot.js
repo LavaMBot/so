@@ -4,7 +4,7 @@ var prefix = "+";
 var adminprefix = '#'
 
 
-const developers = ["ID","ID"]
+const developers = ["594461697683750933"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
@@ -24,7 +24,7 @@ client.on('message', message => {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-  if (message.content.startsWith(adminprefix + 'sets')) {
+  if (message.content.startsWith(adminprefix + 'st')) {
     client.user.setGame(argresult, "https://www.twitch.tv/dream");
       message.channel.send(`**✅**`)
   }
